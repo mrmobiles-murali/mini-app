@@ -32,14 +32,14 @@ mini-app/
 
 ### 1. User Profile
 Displays authenticated user information:
-- User ID
-- Username
-- Language preference
-- Bot status indicator
+- MOBILE DOCTOR
+- Mr Mobiles 
+- Book Your Repair
+- Available 24/7
 
 ### 2. Quick Actions
-- **Share App** - Share to Telegram chats
-- **Notify** - Show notifications with haptic feedback
+- **Share App** - share bot 
+- **Notify** - Alert 
 - **Toggle Theme** - Switch between light and dark modes
 
 ### 3. Counter Demo
@@ -56,14 +56,8 @@ Collect user input:
 - Form validation
 - LocalStorage integration
 
-### 5. App Data Display
-Show real-time app information:
-- Current theme
-- Platform detection
-- App version
-- Last action timestamp
 
-### 6. Settings
+### 5. Settings
 Persistent user preferences:
 - Enable/disable notifications
 - Haptic feedback toggle
