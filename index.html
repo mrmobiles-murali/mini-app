@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0088cc">
-    <title>Telegram Mini App</title>
+    <title>Telegram Mini App — Demo & Starter</title>
+    <meta name="description" content="A polished starter for Telegram Mini Apps — user profile, theme integration, MainButton, feedback & sharing.">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Telegram Mini App — demo & starter">
+    <meta property="og:description" content="A polished starter for Telegram Mini Apps — user profile, theme integration, MainButton, feedback & sharing.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Telegram+Mini+App">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Telegram Mini App — demo & starter">
+
+    <!-- Manifest / icons -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="https://via.placeholder.com/32.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Analytics placeholder (replace G-XXXXXXX) -->
+    <!-- Google Analytics 4 (replace measurement id) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX'); // <-- replace with your GA4 measurement id
+    </script>
+
 </head>
 <body>
     <div id="app">
@@ -13,6 +42,10 @@
             <div class="header-content">
                 <h1>🚀 Welcome</h1>
                 <p id="user-greeting">Loading user info...</p>
+            </div>
+            <div class="cta-group">
+                <a id="open-telegram" class="cta" href="#">Open in Telegram</a>
+                <a id="try-demo" class="cta secondary" href="#">Try Demo</a>
             </div>
         </header>
 
