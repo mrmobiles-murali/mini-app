@@ -68,7 +68,7 @@ Persistent user preferences:
 
 ### Prerequisites
 - A Telegram account
-- A bot created via [@BotFather](https://t.me/botfather)
+- A bot created via [@BotFather](https://t.me/mrmobiledoctor_bot)
 - A web server to host files (GitHub Pages, Netlify, Vercel, etc.)
 
 ### Installation & Deployment
