@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0088cc">
+    <title>Telegram Mini App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="header-content">
+                <h1>🚀 Welcome</h1>
+                <p id="user-greeting">Loading user info...</p>
+            </div>
+        </header>
 
+        <main class="main-content">
+            <!-- User Info Section -->
+            <section class="card">
+                <h2>👤 User Profile</h2>
+                <div id="user-info" class="info-grid">
+                    <div class="info-item">
+                        <span class="label">ID:</span>
+                        <span id="user-id" class="value">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Username:</span>
+                        <span id="username" class="value">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Language:</span>
+                        <span id="language" class="value">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Is Bot:</span>
+                        <span id="is-bot" class="value">-</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions Section -->
+            <section class="card">
+                <h2>⚡ Quick Actions</h2>
+                <div class="button-group">
+                    <button id="share-btn" class="btn btn-primary">
+                        <span class="btn-icon">📤</span>
+                        <span>Share App</span>
+                    </button>
+                    <button id="notify-btn" class="btn btn-secondary">
+                        <span class="btn-icon">🔔</span>
+                        <span>Notify</span>
+                    </button>
+                    <button id="theme-btn" class="btn btn-secondary">
+                        <span class="btn-icon">🌙</span>
+                        <span>Theme</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Counter Demo Section -->
+            <section class="card">
+                <h2>📊 Counter Demo</h2>
+                <div class="counter-container">
+                    <div class="counter-display">
+                        <span id="counter">0</span>
+                    </div>
+                    <p class="counter-label">Click buttons to count</p>
+                </div>
+                <div class="button-group">
+                    <button id="decrement-btn" class="btn btn-control">−</button>
+                    <button id="reset-btn" class="btn btn-control btn-reset">Reset</button>
+                    <button id="increment-btn" class="btn btn-control">+</button>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="card">
+                <h2>📝 Feedback Form</h2>
+                <form id="feedback-form" class="form">
+                    <div class="form-group">
+                        <label for="name-input">Your Name</label>
+                        <input type="text" id="name-input" placeholder="Enter your name" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-input">Message</label>
+                        <textarea id="message-input" placeholder="Share your feedback..." class="form-input" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Submit Feedback</button>
+                </form>
+            </section>
+
+            <!-- Data Display Section -->
+            <section class="card">
+                <h2>💾 App Data</h2>
+                <div class="data-display">
+                    <p><strong>Theme:</strong> <span id="theme-display">Light</span></p>
+                    <p><strong>Platform:</strong> <span id="platform-display">-</span></p>
+                    <p><strong>Version:</strong> <span id="version-display">1.0.0</span></p>
+                    <p><strong>Last Action:</strong> <span id="last-action">-</span></p>
+                </div>
+                <button id="copy-data-btn" class="btn btn-secondary btn-full">Copy App Data</button>
+            </section>
+
+            <!-- Settings Section -->
+            <section class="card">
+                <h2>⚙️ Settings</h2>
+                <div class="settings-grid">
+                    <div class="setting-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="notifications-toggle" checked>
+                            <span>Enable Notifications</span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="haptic-toggle" checked>
+                            <span>Haptic Feedback</span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="sound-toggle" checked>
+                            <span>Sound Effects</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>🚀 Powered by Telegram Mini App SDK</p>
+            <p class="footer-meta" id="footer-time">Loading...</p>
+        </footer>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

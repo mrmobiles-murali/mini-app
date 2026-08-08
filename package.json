@@ -1,0 +1,29 @@
+{
+  "name": "telegram-mini-app",
+  "version": "1.0.0",
+  "description": "A complete starter template for building Telegram Mini Apps",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 3000",
+    "serve": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "telegram",
+    "mini-app",
+    "web-app",
+    "bot",
+    "webapp",
+    "twa"
+  ],
+  "author": "mrmobiles-murali",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrmobiles-murali/mini-app.git"
+  },
+  "homepage": "https://github.com/mrmobiles-murali/mini-app#readme",
+  "bugs": {
+    "url": "https://github.com/mrmobiles-murali/mini-app/issues"
+  }
+}
