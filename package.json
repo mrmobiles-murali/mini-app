@@ -6,7 +6,9 @@
   "scripts": {
     "start": "python -m http.server 8000",
     "dev": "python -m http.server 3000",
-    "serve": "npx http-server -p 8000"
+    "serve": "npx http-server -p 8000",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix"
   },
   "keywords": [
     "telegram",
@@ -25,5 +27,8 @@
   "homepage": "https://github.com/mrmobiles-murali/mini-app#readme",
   "bugs": {
     "url": "https://github.com/mrmobiles-murali/mini-app/issues"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
   }
 }
