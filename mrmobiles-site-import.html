@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mr Mobiles – Certified Pre-Owned Phones, Repair & Accessories</title>
+<style>
+:root{--bg:#eef2fb;--tx:#0b1020;--mu:#4b5575;--gl:rgba(255,255,255,.55);--gb:rgba(255,255,255,.75);--ac:#0a84ff;--ac2:#bf5af2;--sh:0 10px 40px rgba(60,80,140,.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070a14;--tx:#f2f5ff;--mu:#a3accb;--gl:rgba(40,46,75,.45);--gb:rgba(255,255,255,.16);--sh:0 10px 40px rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{--bg:#070a14;--tx:#f2f5ff;--mu:#a3accb;--gl:rgba(40,46,75,.45);--gb:rgba(255,255,255,.16);--sh:0 10px 40px rgba(0,0,0,.5)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+.orb{position:fixed;border-radius:50%;filter:blur(70px);opacity:.55;z-index:-1;animation:fl 18s ease-in-out infinite alternate}
+.o1{width:380px;height:380px;background:#0a84ff;top:-80px;left:-80px}.o2{width:340px;height:340px;background:#bf5af2;top:35%;right:-100px;animation-delay:-6s}.o3{width:300px;height:300px;background:#30d5c8;bottom:-60px;left:25%;animation-delay:-11s}
+@keyframes fl{to{transform:translate(60px,40px) scale(1.15)}}
+.g{background:var(--gl);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border:1px solid var(--gb);border-radius:28px;box-shadow:var(--sh),inset 0 1px 0 rgba(255,255,255,.5);position:relative;overflow:hidden}
+.g::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.35),transparent 40%);pointer-events:none;opacity:.5}
+.t{transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s;cursor:pointer;user-select:none;position:relative;overflow:hidden}
+.t:hover{transform:translateY(-3px)}.t:active{transform:scale(.94)}
+.rp{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);transform:scale(0);animation:rp .6s ease-out forwards;pointer-events:none}
+@keyframes rp{to{transform:scale(4);opacity:0}}
+nav{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:4px;padding:6px;border-radius:999px;max-width:94vw;overflow-x:auto;scrollbar-width:none}
+nav a{padding:8px 14px;border-radius:999px;color:var(--tx);text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap}
+nav a.on,nav a:hover{background:var(--ac);color:#fff}
+section{max-width:1100px;margin:0 auto;padding:90px 18px 10px}
+h1{font-size:clamp(38px,8vw,72px);line-height:1.02;margin:0 0 14px;letter-spacing:-.03em}
+h2{font-size:clamp(26px,5vw,38px);margin:0 0 6px;letter-spacing:-.02em}
+.gt{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+p.s{color:var(--mu);margin:0 0 20px}
+.hero{padding:120px 18px 20px;text-align:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;border:0;font:600 15px inherit;font-family:inherit;color:#fff;background:linear-gradient(135deg,var(--ac),var(--ac2));text-decoration:none;box-shadow:0 8px 24px rgba(10,132,255,.4)}
+.btn.o{background:var(--gl);color:var(--tx);border:1px solid var(--gb);box-shadow:none}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px}
+.stats div{padding:16px 8px}.stats b{font-size:26px;display:block}.stats span{color:var(--mu);font-size:13px}
+.scroll{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;scrollbar-width:none}
+.scroll>*{scroll-snap-align:start;flex:0 0 auto}
+.bn{width:230px;height:130px;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;font-weight:700;font-size:22px}
+.bn small{font-weight:500;font-size:12px;opacity:.9}
+.ab{width:min(86vw,420px);height:170px;padding:22px;color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.ab h3{margin:0;font-size:22px}.ab em{font-style:normal;background:rgba(255,255,255,.25);padding:4px 12px;border-radius:99px;font-size:13px;align-self:flex-start;backdrop-filter:blur(10px)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chip{padding:8px 16px;border-radius:99px;background:var(--gl);border:1px solid var(--gb);font-size:14px;color:var(--tx);font-family:inherit;backdrop-filter:blur(14px)}
+.chip.on{background:var(--ac);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.card{padding:16px}.card .ic{font-size:38px}.card h4{margin:6px 0 2px;font-size:15px}.card .pr{font-weight:700}.card s{color:var(--mu);font-size:13px;margin-left:6px}.tag{position:absolute;top:12px;right:12px;background:#ff453a;color:#fff;font-size:11px;padding:3px 9px;border-radius:99px;font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:760px){.two{grid-template-columns:1fr}}
+.pad{padding:22px}
+.ci{display:flex;gap:14px;align-items:center;padding:12px 0;color:var(--tx);text-decoration:none;border-bottom:1px solid var(--gb)}.ci:last-child{border:0}
+.ci i{font-style:normal;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--ac),var(--ac2));font-size:20px;flex:none}
+.ci small{display:block;color:var(--mu)}
+.soc{display:flex;gap:12px;margin-top:16px}.soc a{width:52px;height:52px;border-radius:18px;display:grid;place-items:center;color:#fff}.soc svg{width:24px;height:24px;fill:#fff}
+.rv{padding:18px;margin-bottom:10px}.rv .st{color:#ff9f0a;letter-spacing:2px}
+.map{height:100%;min-height:300px;background:linear-gradient(160deg,rgba(10,132,255,.25),rgba(48,213,200,.25));display:grid;place-items:center;text-align:center;padding:20px}
+.map svg{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+.pin{font-size:46px;animation:bn 1.6s infinite}@keyframes bn{50%{transform:translateY(-10px)}}
+footer{text-align:center;color:var(--mu);padding:40px 18px 120px;font-size:14px}
+#cb{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60}
+#fab{width:62px;height:62px;border-radius:50%;border:0;font-size:28px;background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;box-shadow:0 10px 30px rgba(10,132,255,.5);float:right}
+#pn{display:none;width:min(92vw,370px);height:min(70vh,520px);flex-direction:column;margin-bottom:12px}
+#pn.open{display:flex;animation:pop .35s cubic-bezier(.3,1.5,.5,1)}@keyframes pop{from{transform:scale(.7);opacity:0;transform-origin:bottom right}}
+#ms{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:8px}
+.m{max-width:82%;padding:10px 14px;border-radius:20px;font-size:14.5px;white-space:pre-line;animation:pop .3s}
+.m.b{background:var(--gl);border:1px solid var(--gb);align-self:flex-start}.m.u{background:var(--ac);color:#fff;align-self:flex-end}
+#qr{display:flex;gap:6px;overflow-x:auto;padding:0 12px 8px;scrollbar-width:none}#qr .chip{white-space:nowrap;font-size:13px;padding:6px 12px}
+#cf{display:flex;gap:8px;padding:10px;border-top:1px solid var(--gb)}
+#cf input{flex:1;border:1px solid var(--gb);background:var(--gl);color:var(--tx);border-radius:99px;padding:11px 16px;font:inherit;outline:0}
+#cf button{border:0;border-radius:50%;width:44px;height:44px;background:var(--ac);color:#fff;font-size:18px}
+.th{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));right:14px;z-index:55;width:42px;height:42px;border-radius:50%;display:none}
+@media(min-width:900px){.th{display:grid;place-items:center}}
+</style></head><body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+<nav class="g" id="nv"><a href="#home" class="on">Home</a><a href="#brands">Brands</a><a href="#offers">Offers</a><a href="#shop">Accessories</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a><a href="#visit">Location</a></nav>
+
+<section class="hero" id="home" style="padding-top:130px">
+<div class="g pad" style="padding:46px 22px">
+<div class="chip" style="display:inline-block;margin-bottom:16px">✨ Certified Pre-Owned • Repair • Accessories</div>
+<h1>Your phone,<br><span class="gt">perfected.</span></h1>
+<p class="s" style="font-size:18px;max-width:560px;margin:0 auto">Mr Mobiles — quality-checked pre-owned smartphones, expert repairs and the latest gadgets, with warranty you can trust.</p>
+<div class="row"><a class="btn t" href="#offers">View Offers</a><a class="btn o t" href="#contact">Contact Us</a><button class="btn o t" onclick="openChat()">💬 Chat with us</button></div>
+<div class="stats"><div class="g t"><b>5000+</b><span>Happy customers</span></div><div class="g t"><b>6 mo</b><span>Warranty</span></div><div class="g t"><b>32pt</b><span>Quality check</span></div></div>
+</div></section>
+
+<section id="brands"><h2>Top <span class="gt">Brands</span></h2><p class="s">Swipe to explore what we stock.</p>
+<div class="scroll" id="bs"></div></section>
+
+<section id="offers"><h2>Hot <span class="gt">Offers</span></h2><p class="s">Limited-time deals — grab them before they’re gone.</p>
+<div class="scroll" id="os"></div></section>
+
+<section id="shop"><h2>Accessories & <span class="gt">Gadgets</span></h2><p class="s">Everything to power, protect and pair your phone.</p>
+<div class="chips" id="fc"></div><div class="grid" id="pg"></div></section>
+
+<section id="reviews"><h2>Customer <span class="gt">Reviews</span></h2><p class="s">Real words from real customers.</p>
+<div class="chips" id="rt"></div><div id="rl"></div></section>
+
+<section id="contact"><h2>Get in <span class="gt">touch</span></h2><p class="s">We reply fast — tap any option.</p>
+<div class="two"><div class="g pad">
+<a class="ci t" href="tel:+910000000000"><i>📞</i><div>Call us<small>+91 00000 00000</small></div></a>
+<a class="ci t" href="https://wa.me/910000000000" target="_blank" rel="noopener"><i>💬</i><div>WhatsApp<small>Chat for quotes & availability</small></div></a>
+<a class="ci t" href="mailto:hello@mrmobiles.in"><i>✉️</i><div>Email<small>hello@mrmobiles.in</small></div></a>
+<a class="ci t" href="#visit"><i>🕘</i><div>Hours<small>Mon–Sun · 10:00 AM – 9:00 PM</small></div></a></div>
+<div class="g pad"><h3 style="margin-top:0">Follow Mr Mobiles</h3><p class="s">Daily stock drops, offers & repair tips.</p>
+<div class="soc">
+<a class="t" style="background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7)" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 1.8A3.2 3.2 0 0 0 3.8 7v10A3.2 3.2 0 0 0 7 20.2h10a3.2 3.2 0 0 0 3.2-3.2V7A3.2 3.2 0 0 0 17 3.8z"/></svg></a>
+<a class="t" style="background:#1877f2" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.7.2-1 1.2-1H17V2h-2.6C11.6 2 10 3.6 10 6.2V8H8v3.5h2V22h4V11.5h2.7L17 8z"/></svg></a>
+<a class="t" style="background:#25d366" href="https://wa.me/910000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.300 0 .500l-.3.400-.4.400c-.1.100-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l1.800.9c.3.100.5.200.5.300.1.200.1.800-.1 1.300z"/></svg></a>
+<a class="t" style="background:#ff0000" href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 0 0 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800C22 15.200 22 12 22 12s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a>
+</div></div></div></section>
+
+<section id="visit"><h2>Visit our <span class="gt">store</span></h2><p class="s">Mr Mobiles · Add your full store address here</p>
+<div class="two"><div class="g map"><svg viewBox="0 0 400 300" preserveAspectRatio="none"><g stroke="currentColor" stroke-width="3" fill="none" opacity=".5"><path d="M0 80 L400 120"/><path d="M0 220 L400 180"/><path d="M120 0 L160 300"/><path d="M290 0 L250 300"/><path d="M0 150 L400 150" stroke-dasharray="8 8"/></g></svg>
+<div style="position:relative"><div class="pin">📍</div><b>Mr Mobiles</b><br><span style="color:var(--mu)">mrmobiles.in</span></div></div>
+<div class="g pad"><h3 style="margin-top:0">Plan your visit</h3><p class="s">Open daily · 10:00 AM – 9:00 PM. Free diagnostics on every repair.</p>
+<div class="row" style="justify-content:flex-start"><a class="btn t" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mr+Mobiles+mrmobiles.in">🗺️ Open in Google Maps</a><a class="btn o t" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Mr+Mobiles">➡️ Directions</a></div></div></div></section>
+
+<footer>© 2026 Mr Mobiles · mrmobiles.in · All rights reserved. Brand names belong to their respective owners.</footer>
+
+<button class="g t th" onclick="tg()" aria-label="Theme">🌗</button>
+<div id="cb"><div id="pn" class="g"><div style="padding:14px 18px;font-weight:700;border-bottom:1px solid var(--gb)">🤖 Mr Mobiles Assistant <span style="color:#30d158;font-size:12px">● online 24/7</span></div><div id="ms"></div><div id="qr"></div><form id="cf"><input id="ci" placeholder="Ask about phones, repair, offers…" autocomplete="off"><button aria-label="Send">➤</button></form></div><button id="fab" class="t" onclick="openChat()" aria-label="Chat">💬</button></div>
+
+<script>
+const $=s=>document.querySelector(s),vib=()=>{try{navigator.vibrate&&navigator.vibrate(12)}catch(e){}};
+document.addEventListener('pointerdown',e=>{const t=e.target.closest('.t,.chip,button');if(!t)return;vib();const r=t.getBoundingClientRect(),d=document.createElement('span');d.className='rp';const z=Math.max(r.width,r.height)/4;d.style.cssText=`width:${z}px;height:${z}px;left:${e.clientX-r.left-z/2}px;top:${e.clientY-r.top-z/2}px`;if(getComputedStyle(t).position==='static')t.style.position='relative';t.style.overflow='hidden';t.appendChild(d);setTimeout(()=>d.remove(),600)});
+function tg(){const r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);r.dataset.theme=d?'light':'dark'}
+const B=[["Apple","iPhone · iPad","#1d1d1f,#6e6e73"],["Samsung","Galaxy S · A · M","#1428a0,#3d6bff"],["OnePlus","Never Settle","#eb0028,#ff6a4d"],["Xiaomi","Redmi · Poco","#ff6900,#ffb347"],["Vivo","V · Y · X series","#415fff,#7b8cff"],["Oppo","Reno · F series","#1a8f5c,#4fd1a0"],["Realme","Number · GT","#d4a017,#ffd54a"],["Google","Pixel","#4285f4,#34a853"]];
+$('#bs').innerHTML=B.map(b=>`<div class="bn g t" style="background:linear-gradient(135deg,${b[2].split(',')[0]}cc,${b[2].split(',')[1]}99)">${b[0]}<small>${b[1]}</small></div>`).join('');
+const O=[["Flat ₹2,000 OFF","Certified pre-owned iPhones","Today only","#0a84ff,#5e5ce6"],["Screen Repair @ ₹799*","Free tempered glass included","This week","#ff375f,#ff9f0a"],["Exchange Bonus","Up to ₹5,000 extra on your old phone","Limited","#30d158,#0a84ff"],["Combo: Case + Glass + Charger","Starting ₹499","Best seller","#bf5af2,#ff375f"]];
+$('#os').innerHTML=O.map(o=>`<div class="ab g t" style="background:linear-gradient(135deg,${o[3].split(',')[0]}dd,${o[3].split(',')[1]}bb)"><em>${o[2]}</em><div><h3>${o[0]}</h3><div style="opacity:.9;font-size:14px">${o[1]}</div></div></div>`).join('');
+const P=[["🎧","Wireless Earbuds",1299,1999,"Audio"],["🔌","65W Fast Charger",799,1199,"Power"],["🔋","20,000mAh Power Bank",1499,2299,"Power"],["⌚","Smart Watch",1999,3499,"Wearables"],["📱","Premium Back Case",299,599,"Protection"],["🛡️","9H Tempered Glass",149,399,"Protection"],["🎮","Gaming Trigger Pair",399,699,"Gadgets"],["🔊","Bluetooth Speaker",999,1799,"Audio"],["🧲","MagSafe Wireless Pad",1099,1799,"Power"],["📷","Phone Gimbal",2499,3999,"Gadgets"],["🎧","Neckband",699,1299,"Audio"],["🔗","Braided Cable",199,399,"Power"]];
+const C=["All",...new Set(P.map(p=>p[4]))];let cat="All";
+function rp(){$('#fc').innerHTML=C.map(c=>`<button class="chip t ${c==cat?'on':''}" onclick="cat='${c}';rp()">${c}</button>`).join('');
+$('#pg').innerHTML=P.filter(p=>cat=="All"||p[4]==cat).map(p=>`<div class="card g t"><span class="tag">${Math.round((1-p[2]/p[3])*100)}% OFF</span><div class="ic">${p[0]}</div><h4>${p[1]}</h4><span class="pr">₹${p[2].toLocaleString('en-IN')}</span><s>₹${p[3].toLocaleString('en-IN')}</s></div>`).join('')}rp();
+const R=[["Arun K.","Sales",5,"Bought a certified iPhone 13 — looked brand new and the battery health was great. Honest pricing!"],["Priya S.","Repairs",5,"Screen replaced in under an hour. Genuine quality and clear explanation."],["Faisal M.","Accessories",4,"Good range of chargers and cases at fair prices. Staff helped me pick the right one."],["Divya R.","Sales",5,"Got a great exchange value for my old phone. Warranty gave me confidence."],["Karthik V.","Repairs",5,"Battery swap done same day. Very transparent, no hidden charges."],["Meena T.","Accessories",5,"Earbuds + power bank combo was a steal. Will visit again!"]];
+const T=["All","Sales","Repairs","Accessories"];let rt="All";
+function rr(){$('#rt').innerHTML=T.map(c=>`<button class="chip t ${c==rt?'on':''}" onclick="rt='${c}';rr()">${c}</button>`).join('');
+$('#rl').innerHTML=R.filter(r=>rt=="All"||r[1]==rt).map(r=>`<div class="rv g t"><div class="st">${"★".repeat(r[2])}${"☆".repeat(5-r[2])}</div><p style="margin:6px 0">${r[3]}</p><small style="color:var(--mu)">— ${r[0]} · ${r[1]}</small></div>`).join('')}rr();
+const links=[...document.querySelectorAll('nav a')];addEventListener('scroll',()=>{let c='home';document.querySelectorAll('section').forEach(s=>{if(scrollY>=s.offsetTop-160)c=s.id});links.forEach(a=>a.classList.toggle('on',a.hash=='#'+c))},{passive:true});
+const K=[[/hi|hello|hey|namaste|vanakkam/,"Hi! 👋 I’m the Mr Mobiles assistant. Ask me about pre-owned phones, repairs, accessories, offers, or our location."],[/iphone|samsung|oneplus|xiaomi|redmi|vivo|oppo|realme|pixel|phone|buy|used|second|pre.?owned/,"We stock certified pre-owned phones from Apple, Samsung, OnePlus, Xiaomi, Vivo, Oppo, Realme and Google. Every phone passes a 32-point check and includes warranty. Tell us your budget on WhatsApp for live availability."],[/repair|screen|battery|broken|display|water|service/,"We repair screens, batteries, charging ports, speakers and water damage. Diagnostics are free; most repairs are same-day. Screen repairs start at ₹799*."],[/offer|discount|deal|sale|price|cheap/,"🔥 Current deals: ₹2,000 off certified iPhones, screen repair from ₹799*, exchange bonus up to ₹5,000, and accessory combos from ₹499. See the Offers section!"],[/accessor|charger|case|glass|earbud|watch|cable|power/,"Chargers, cables, cases, tempered glass, earbuds, smart watches, speakers and power banks — see the Accessories section for prices."],[/exchange|sell|trade/,"Yes! We buy and exchange phones. Share the model & condition on WhatsApp for an instant quote."],[/warrant|guarantee/,"Pre-owned phones come with up to 6 months warranty; repairs include service warranty on parts."],[/where|locat|address|map|direction|visit|open|time|hour/,"We’re open daily 10 AM – 9 PM. Scroll to Location for Google Maps & directions."],[/call|contact|whatsapp|phone number|email|mail/,"📞 Call or WhatsApp us from the Contact section — we reply quickly!"],[/thank|bye/,"Happy to help! 😊 Visit us anytime."]];
+function say(t,c){const d=document.createElement('div');d.className='m '+c;d.textContent=t;$('#ms').appendChild(d);$('#ms').scrollTop=1e5}
+function reply(q){say(q,'u');const l=q.toLowerCase(),m=K.find(k=>k[0].test(l));setTimeout(()=>say(m?m[1]:"Thanks for asking! For this one our team can help best — tap WhatsApp in Contact and we’ll respond shortly. 💬",'b'),500)}
+let opened=0;function openChat(){const p=$('#pn');p.classList.toggle('open');if(!opened){opened=1;say("Hi! 👋 Welcome to Mr Mobiles. How can I help today?",'b');$('#qr').innerHTML=["Pre-owned phones","Repair","Offers","Accessories","Location"].map(q=>`<button class="chip t" onclick="reply('${q}')">${q}</button>`).join('')}}
+$('#cf').onsubmit=e=>{e.preventDefault();const v=$('#ci').value.trim();if(v){reply(v);$('#ci').value=''}};
+</script></body></html>
